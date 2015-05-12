@@ -28,7 +28,7 @@ GLANCE_DOWNLOAD_URL = "http://www.glance.net/install/install.asp"
 RE_GLANCE_ZIP = re.compile(
 	r'href="(?P<url>/install/GlanceMac_[^"]+\.zip)"', re.I)
 RE_GLANCE_VERSION = re.compile(
-	r'Version (?P<version>[0-9]+(.[0-9]+)*)"', re.I)
+	r'Version (?P<version>[0-9]+(.[0-9]+)*)', re.I)
 
 class GlanceURLProvider(Processor):
 	"""Provides URL to the latest binary release of Glance."""
