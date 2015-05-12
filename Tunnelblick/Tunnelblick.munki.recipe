@@ -28,6 +28,8 @@
 			<string>Tunnelblick is a free, open source graphic user interface for OpenVPN on OS X. It provides easy control of OpenVPN client and/or server connections.</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>RestartAction</key>
+			<string>RequireLogout</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
