@@ -49,7 +49,7 @@ class GlanceURLProvider(Processor):
 	}
 
 	def __init__(self, env=None, infile=None, outfile=None):
-		super(Processor, self).__init__(env, infile, outfile)
+		super(self.__class__, self).__init__(env, infile, outfile)
 		self.page = None
 
 	def get_glance_page(self, download_url):
