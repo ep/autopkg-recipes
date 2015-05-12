@@ -105,6 +105,7 @@ class GlanceURLProvider(Processor):
 		self.env["url"] = "http://www.glance.net" + self.get_glance_zip_url(download_url)
 		self.output("Found URL %s" % self.env["url"])
 
+		# per https://github.com/autopkg/autopkg/issues/72
 		self.env["version"] = self.get_glance_version(download_url)
 		self.output("Found version %s" % self.env["version"])
 
